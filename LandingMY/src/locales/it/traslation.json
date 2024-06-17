@@ -1,0 +1,16 @@
+
+{
+    "Hero": {
+      "title": "SME MANAGEMENT SOLUTIONS",
+      "subtitle1": "Il sistema di gestione completo per le PMI",
+      "subtitle2": "Che accompagna la crescita della vostra azienda",
+      "contatto": "Contattaci",
+      "piani": "Piani"
+    },
+
+"TopBar":{
+    "welcome": "Benvenuto",
+    "contact_us": "contact us",
+    "plans": "Plans"
+  }
+}
