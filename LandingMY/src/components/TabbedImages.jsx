@@ -1,14 +1,14 @@
 import { useState } from 'react';
-
-import resumen from '../assets/resumen.png';
-import calendario from '../assets/calendario.png';
-import empleados from '../assets/empleados.png';
-import coordenadas from '../assets/coordenadas.png';
-import factura from '../assets/factura.png';
-import caja from '../assets/caja.png';
+import LandingPage from '../assets/LandingPage.png';
+import catalogo from '../assets/catalogo.png';
+import institucional from '../assets/institucional.png';
+import complex from '../assets/complex.png';
+import blog from '../assets/blog.png';
+import { useTranslation } from 'react-i18next';
 
 const TabbedImages = () => {
   const [activeTab, setActiveTab] = useState('tab1');
+  const { t } = useTranslation();
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -18,38 +18,33 @@ const TabbedImages = () => {
     switch (tab) {
       case 'tab1':
         return {
-          image: resumen,
-          text: 'Texto explicativo para el Resumen.',
+          image: LandingPage,
+          text: t('TabbedImages.LandingText', 'En Innoweb Solutions, creamos landing pages optimizadas y atractivas que capturan la atención de tus visitantes desde el primer momento. Diseñamos páginas con un enfoque claro en la conversión, asegurando que cada elemento esté estratégicamente colocado para maximizar tus resultados. Desde una presentación visual deslumbrante hasta una navegación intuitiva, nuestras landing pages son la herramienta perfecta para impulsar tus campañas de marketing y capturar leads efectivos..'),
         };
       case 'tab2':
         return {
-          image: factura,
-          text: 'Texto explicativo para Facturación.',
+          image: catalogo,
+          text: t('TabbedImages.EcommerceText', 'Transforma tu idea de tienda online en una realidad con nuestras soluciones de e-commerce personalizadas. Nos encargamos de todo, desde el diseño intuitivo y atractivo hasta la integración de sistemas de pago seguros y funcionalidades avanzadas. Ya sea que vendas productos físicos o digitales, nuestra experiencia en desarrollo de e-commerce garantiza una plataforma robusta y escalable que crecerá junto a tu negocio, brindándote las herramientas necesarias para administrar tu inventario, pedidos y clientes de manera eficiente.'),
         };
       case 'tab3':
         return {
-          image: empleados,
-          text: 'Texto explicativo para la Gestión de Turnos.',
+          image: institucional,
+          text: t('TabbedImages.SimpleText', 'Si necesitas una presencia online efectiva y rápida, nuestras soluciones de páginas web simples son perfectas para ti. Diseñamos sitios web que combinan estética y funcionalidad, ofreciendo a tus visitantes una experiencia de usuario agradable y sin complicaciones. Ideal para pequeñas empresas, profesionales independientes y proyectos personales, nuestras páginas web están optimizadas para cargar rápidamente y adaptarse a todos los dispositivos..'),
         };
       case 'tab4':
         return {
-          image: coordenadas,
-          text: 'Texto explicativo para Coordenadas.',
+          image: complex,
+          text: t('TabbedImages.ComplexText', 'Para proyectos que requieren funcionalidades avanzadas y personalización completa, Innoweb Solutions ofrece desarrollos web complejos a medida. Trabajamos en estrecha colaboración contigo para entender tus necesidades y objetivos específicos, entregando soluciones innovadoras y técnicamente sólidas. Desde sistemas de gestión de contenido (CMS) personalizados hasta aplicaciones web interactivas, nuestro equipo de expertos está listo para afrontar cualquier desafío y llevar tu proyecto al siguiente nivel.'),
         };
       case 'tab5':
         return {
-          image: calendario,
-          text: 'Texto explicativo para Tareas.',
-        };
-      case 'tab6':
-        return {
-          image: caja,
-          text: 'Texto explicativo para Caja.',
+          image: blog,
+          text: t('TabbedImages.ScalabilityText', 'En Innoweb Solutions, no solo creamos tu sitio web, sino que también te acompañamos en cada paso de tu crecimiento digital. Ofrecemos asistencia técnica continua, mejoras periódicas y optimizaciones para asegurarnos de que tu plataforma siempre esté en su mejor rendimiento. Entendemos que el mundo digital está en constante evolución, por lo que nuestras soluciones están diseñadas para ser escalables, permitiéndote añadir nuevas funcionalidades y adaptarte a las nuevas tendencias y demandas del mercado.'),
         };
       default:
         return {
-          image: resumen,
-          text: 'Texto explicativo por defecto.',
+          image: LandingPage,
+          text: t('TabbedImages.DefaultText', 'Texto explicativo por defecto.'),
         };
     }
   };
@@ -58,57 +53,60 @@ const TabbedImages = () => {
 
   return (
     <div className="flex flex-col items-center mt-4">
-    <div className="grid grid-cols-3 gap-2 mb-2 md:mb-4 "> {/* Usar grid para distribuir botones */}
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab1' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab1')}
-      >
-        Resumen
-      </button>
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab2' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab2')}
-      >
-        Facturación
-      </button>
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab3' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab3')}
-      >
-        Turnos
-      </button>
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab4' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab4')}
-      >
-        Coordenadas
-      </button>
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab5' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab5')}
-      >
-        Tareas
-      </button>
-      <button
-        className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm ${activeTab === 'tab6' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
-        onClick={() => handleTabClick('tab6')}
-      >
-        Caja
-      </button>
-    </div>
-    <div className="w-full flex flex-col md:flex-row justify-center items-center md:items-start space-y-2 md:space-y-0 md:space-x-4"> {/* Ajuste del espacio entre elementos */}
-      <div className="w-full md:w-1/3 p-2 md:p-4"> {/* Ajuste del padding */}
-        <p className="text-sm md:text-base text-gray-800">{text}</p> {/* Ajuste del tamaño del texto */}
+      <div className="grid grid-cols-3 gap-2 lg:grid-cols-6 lg:gap-4 mb-2 md:mb-4 p-4">
+        <button
+          className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm lg:text-lg lg:px-8 ${activeTab === 'tab1' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+          onClick={() => handleTabClick('tab1')}
+        >
+          {t('TabbedImages.Landing', 'Landing Page')}
+        </button>
+        <button
+          className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm lg:text-lg lg:px-4 ${activeTab === 'tab2' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+          onClick={() => handleTabClick('tab2')}
+        >
+          {t('TabbedImages.eCommerce', 'E-Commerce')}
+        </button>
+        <button
+          className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm lg:text-lg lg:px-4 ${activeTab === 'tab3' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+          onClick={() => handleTabClick('tab3')}
+        >
+          {t('TabbedImages.simple', 'Simple Web')}
+        </button>
+        <button
+          className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm lg:text-lg lg:px-4 ${activeTab === 'tab4' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+          onClick={() => handleTabClick('tab4')}
+        >
+          {t('TabbedImages.complex', 'Complex Web')}
+        </button>
+        <button
+          className={`px-2 py-1 rounded md:rounded-md text-xs md:text-sm lg:text-lg lg:px-4 ${activeTab === 'tab5' ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-600'}`}
+          onClick={() => handleTabClick('tab5')}
+        >
+          {t('TabbedImages.escalability', 'Scalability')}
+        </button>
       </div>
-      <div className="w-full md:w-2/3 flex justify-center items-center">
-        <img src={image} alt="Tab Image" className="w-full h-auto max-w-full md:max-w-md" />
+      <div className="w-full flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+        <div className="md:w-2/5 flex justify-center">
+          <img src={image} alt="Tab Image" className="w-full max-w-sm h-auto" />
+        </div>
+        <div className="md:w-3/5 flex flex-col items-center">
+          <h2 className="text-2xl font-bold text-center mb-4">
+            {t(`TabbedImages.${activeTab}Title`, 'Title')}
+          </h2>
+          <p className="text-lg text-gray-800">
+            {text}
+          </p>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
 export default TabbedImages;
+
+
+
+
 
 
 

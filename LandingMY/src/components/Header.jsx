@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../assets/Logo.png';
 import { RiMenuFill, RiCloseLine } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <header className="flex items-center justify-between w-full p-4 h-[10vh] z-50 relative">
@@ -16,20 +17,20 @@ const Header = () => {
         {showMenu ? <RiCloseLine /> : <RiMenuFill />}
       </button>
       <nav
-        className={`fixed bg-white w-[70%] md:w-[30%] xl:w-full h-auto ${showMenu ? "top-28 right-0" : "-top-full right-0"
+        className={`fixed bg-white w-[70%] md:w-[30%] xl:w-full h-auto ${showMenu ? "top-28 right-20" : "-top-full right-20"
           } xl:static flex flex-col xl:flex-row items-center justify-center 
         gap-10 transition-all duration-500 z-40 p-4`}>
+        {t('Header.Servicios')}
         <a href='#' className="p-2">
-          Servicios y Desarrollos
         </a>
         <a href='#' className="p-2">
-          Nosotros
+          {t('Header.Nosotros')}
         </a>
         <a href='#' className="p-2">
-          Contacto
+          {t('Header.Contacto')}
         </a>
         <a href='#' className="p-2">
-          que mas ponemos?
+          {t('Header.CotizaTuWeb')}
         </a>
       </nav>
     </header>
@@ -37,6 +38,7 @@ const Header = () => {
 }
 
 export default Header;
+
 
 
 
