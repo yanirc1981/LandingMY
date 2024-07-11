@@ -6,6 +6,7 @@ export const content = [
 ];
 export const theme = {
   extend: {
+    darkMode: 'selector',
     colors: {
       primary: "#706FE5",
       secondary: "#6b7280",

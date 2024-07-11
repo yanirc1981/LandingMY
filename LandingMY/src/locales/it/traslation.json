@@ -13,6 +13,7 @@
     "whatsapp": "WhatsApp"
   },
   "Works": {
+    "WeCreate":"CREIAMO PRODOTTI DIGITALI DI LIVELLO MONDIALE"
 
   },
   "StickyNav":{
@@ -22,7 +23,14 @@
 
   },
   "ContactForm": {
-
+    "title":"Inserite i vostri dati in modo che un consulente commerciale possa contattarvi al più presto.",
+    "firstName":"Nome",
+    "familyname":"Apello",
+    "email":"E-mail",
+    "phone":"Telefono",
+    "description":"Descrizione",
+    "submit":"Inviare",
+    "back":"Indietro"
   },
   "FilpCardContainer": {
 
@@ -48,10 +56,20 @@
   "Step2":{
   "title": "Di che tipo di sito web hai bisogno?",
   "button": "Prossimo",
-  "dominio": "Avete il nome di dominio per il vostro sito web?",
-  "hosting": "Avete bisogno di hosting e dominio??"
+  "HaveDomain": "Do you have the Domain for your website?",
+  "NeedHosting": "Avete bisogno di hosting e dominio??"
  },
-  "Step3": {},
+  "Step3": {
+    "title": "Integrazioni",
+    "Blog": "Blog",
+     "Catalogo": "catalog",
+     "Delivery": "Delivery",
+     "Turnos": "Shift management",
+     "CRM": "CRM",
+     "Payments": "Payments",
+     "WhatsApp": "Whatsapp",
+     "Bot": "Bot"
+  },
   "Step4": {},
  
   "TabbedImages": {
@@ -68,7 +86,7 @@
     "DefaultText": "In Innoweb Solutions, creiamo landing page ottimizzate e attraenti che catturano l'attenzione dei tuoi visitatori fin dal primo momento. Progettiamo pagine con un chiaro focus sulla conversione, assicurandoci che ogni elemento sia posizionato strategicamente per massimizzare i tuoi risultati. Dalla presentazione visiva sorprendente alla navigazione intuitiva, le nostre landing page sono lo strumento perfetto per potenziare le tue campagne di marketing e catturare lead efficaci."
   },
   "Bottons": {
-    "WeCreate": "CREIAMO PRODOTTI DIGITALI DI CLASSE MONDIALE"
+    "WhatCan": "CHE COSA POSSIAMO FARE PER LA VOSTRA AZIENDA?"
   },
   "FlipCard":
   {

@@ -1,15 +1,15 @@
 import { useTranslation } from 'react-i18next';
 
-const Works = () => {
+const Bottons = () => {
   const { t } = useTranslation();
     return (
         <div>
-        <div className= "p-10 ">
-          <h1 className="text-[25px] font-bold text-secondary">WE CREATE WORLD-CLASS DIGITAL PRODUCTS</h1>
-          {t('Bottons.WeCreate')}
+        <div className= " dark:bg-slate-800 flex flex-col items-center p-7 md:p-30">
+          <h1 className="text-[30px] font-bold items-center  p-8 text-white">{t('Bottons.WhatCan')}</h1>
+          
       </div>
       </div>
     )
   }
   
-  export default Works
+  export default Bottons

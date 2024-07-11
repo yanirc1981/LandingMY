@@ -13,17 +13,25 @@
     "whatsapp": "WhatsApp"
   },
   "Works": {
-
+    "WeCreate":"WE CREATE WORLD-CLASS DIGITAL PRODUCTS"
   },
   "StickyNav":{
     "overview": "Overview",
     "benefits": "Benefits",
     "request_demo": "Request a Demo"
-
   },
   "ContactForm": {
-
+    "title":"Enter your information so that a sales consultant can contact you as soon as possible.",
+    "firstName":"First Name",
+    "familyname":"Family Name",
+    "email":"E-mail",
+    "phone":"Phone",
+    "description":"Description",
+    "submit":"Submit",
+    "back":"Back"
+    
   },
+
   "FilpCardContainer": {
 
   },
@@ -46,13 +54,24 @@
     "button": "Next"
   },
   "Step2":{
-  "title": "What type of website do you need?",
+  "title": "Do you need Hosting and Domain for your Web?",
   "button": "Next",
-  "dominio": "Do you have the Domain for your website?",
-  "hosting": "Do you need Hosting and domain?"
+  "HaveDomain": "Do you have the Domain for your website?",
+  "NeedHosting": "Do you need Hosting and domain?"
  },
-  "Step3": {},
-  "Step4": {},
+  "Step3": {
+    "title": "Integrations",
+    "Blog": "Blog",
+    "Catalogo": "catalog",
+    "Delivery": "Delivery",
+    "Turnos": "Shift management",
+    "CRM": "CRM",
+    "Payments": "Payments",
+    "WhatsApp": "Whatsapp",
+    "Bot": "Bot"
+
+    },
+  
   
   "TabbedImages": {
     "landing": "Landing",
@@ -68,7 +87,7 @@
     "DefaultText": "At Innoweb Solutions, we create optimized and attractive landing pages that capture your visitors' attention from the first moment. We design pages with a clear focus on conversion, ensuring every element is strategically placed to maximize your results. From stunning visual presentations to intuitive navigation, our landing pages are the perfect tool to boost your marketing campaigns and capture effective leads."
   },
   "Bottons": {
-    "WeCreate": "WE CREATE WORLD-CLASS DIGITAL PRODUCTS"
+    "WhatCan": "WHAT CAN WE DO FOR YOUR BUSINESS?"
   },
   "FlipCard":
   {

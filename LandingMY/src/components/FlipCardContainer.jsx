@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./FlipCard.css";
 import PropTypes from "prop-types";
@@ -9,10 +10,10 @@ const FlipCard = ({ frontText, backTitle, backSteps, backHighlight, frontColor, 
   const { t } = useTranslation();
   
   return (
-    <div className="group perspective my-4">
+    <div className="group perspective my-4 mb-0">
       <div className="flip-card relative w-70 h-160 md:w-80 md:h-180 rounded-lg shadow-lg transition-transform duration-500 preserve-3d">
         <div
-          className={`flip-card-front absolute h-full rounded-lg text-white flex flex-col items-center justify-center ${frontColor}`}
+          className={`flip-card-front absolute  rounded-lg text-white flex flex-col items-center justify-center ${frontColor}`}
         >
           <div className="half-circle-icon"></div> {/* Medio círculo */}
           <div className="text-center mt-12">
@@ -36,7 +37,8 @@ const FlipCard = ({ frontText, backTitle, backSteps, backHighlight, frontColor, 
               <li key={index}>{t(step)}</li>
             ))}
           </ul>
-          <h3 className="text-4xl font-bold text-orange-500 mb-4">{t(backHighlight)}</h3>
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500 mb-3">{t(backHighlight)}</h3>
+
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@ const FlipCardContainer = () => {
         frontText="FlipCard.Planificación"
         backTitle="FlipCard.Primer Paso"
         backSteps={[
-          "FlipCard.Recolección de Requisitos y Pianificazione"
+          "FlipCard.Recolección de Requisitos y Planificación"
         ]}
         backHighlight="FlipCard.Planificación"
         frontColor="bg-customBlue"
@@ -111,4 +113,5 @@ const FlipCardContainer = () => {
 };
 
 export default FlipCardContainer;
+
 

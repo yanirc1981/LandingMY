@@ -12,18 +12,25 @@
     "atencion": "Atencion al Cliente",
     "whatsapp": "whatsapp"
   },
-  "Works":{
-    
-}, 
+  "Works": {
+    "WeCreate":"CREAMOS PRODUCTOS DIGITALES DE PRIMERA CLASE"
+
+  },
 "StickyNav":{
     "overview":"Vision General",
-    "beneficios":"Beneficios",
+    "benefits":"Beneficios",
     "request_demo":"Solicite una Demo"
 
   },
-"ContactForm":{
-
- },
+"ContactForm": {
+    "title":"Completá tus datos para que un asesor comercial se comunique con vos a la brevedad.",
+    "firstName":"Nombre",
+    "familyname":"Apellido",
+    "email":"Correo Electrónico",
+    "phone":"Telefono",
+    "description":"Descripción",
+    "submit":"Enviar"
+  },
  "FilpCardContainer": {
 
  },
@@ -46,13 +53,23 @@
     "button": "Siguiente"
   },
  "Step2":{
-  "title": "¿Qué tipo de sitio web necesitas?",
+  "title": "¿Necesitas Hosting y Dominio para tu Web?",
   "button": "Siguiente",
-  "dominio": "Tienes el Dominio de tu Web?",
-  "hosting": "Necesitas Hosting y dominio?"
+  "HaveDomain": "Necesitas el Dominio para tu Web?",
+  "NeedHosting": "Necesitas Hosting y Dominio?"
  },
- "Step3":{},
- "Step4":{},
+ "Step3":{
+  "title": "Integraciones",
+   "Blog": "Blog",
+    "Catalogo": "catalog",
+    "Delivery": "Delivery",
+    "Turnos": "Shift management",
+    "CRM": "CRM",
+    "Payments": "Payments",
+    "WhatsApp": "Whatsapp",
+    "Bot": "Bot"
+ },
+
 
  "TabbedImages":{
   "landing": "Landing",
@@ -68,7 +85,7 @@
   "DefaultText":"En Innoweb Solutions, creamos landing pages optimizadas y atractivas que capturan la atención de tus visitantes desde el primer momento. Diseñamos páginas con un enfoque claro en la conversión, asegurando que cada elemento esté estratégicamente colocado para maximizar tus resultados. Desde una presentación visual deslumbrante hasta una navegación intuitiva, nuestras landing pages son la herramienta perfecta para impulsar tus campañas de marketing y capturar leads efectivos.."
  },
  "Bottons":{
-  "WeCreate": "CREAMOS PRODUCTOS DIGITALES DE PRIMERA CLASE"
+ "WhatCan": "QUE PODEMOS HACER POR TU NEGOCIO?"
  },
  "FlipCard":
  {
