@@ -29,7 +29,9 @@
     "email":"Correo Electrónico",
     "phone":"Telefono",
     "description":"Descripción",
-    "submit":"Enviar"
+    "submit":"Enviar",
+    "comentario":"Commento",
+    "downloadPdf":"Envia y Descarga"
   },
  "FilpCardContainer": {
 

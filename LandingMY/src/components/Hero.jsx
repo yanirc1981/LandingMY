@@ -9,9 +9,9 @@ const Hero = () => {
       className="bg-cover bg-center h-[85vh]"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <div className="flex items-center h-full bg-black bg-opacity-50 px-8">
+      <div className="flex items-center h-full bg-black bg-opacity-60 px-6">
         <div className="text-left">
-          <h1 className="text-white text-4xl md:text-6xl font-extrabold mb-4 ml-8 drop-shadow-lg">
+          <h1 className="text-white text-4xl md:text-5xl font-extrabold mb-4 ml-8 drop-shadow-lg">
             {t('hero.title')}
           </h1>
           <p className="text-white text-3xl md:text-4xl font-bold mb-2 ml-8 drop-shadow-lg">

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "MANAGEMENT SOLUTIONS FOR SMES",
+    "title": "MANAGEMENT SOLUTIONS FOR YOUR BUSINESS",
     "subtitle1": "The integrated management system for SMEs",
     "subtitle2": "That accompanies the growth of your business",
     "contact": "Contact Us",
@@ -28,7 +28,9 @@
     "phone":"Phone",
     "description":"Description",
     "submit":"Submit",
-    "back":"Back"
+    "back":"Back",
+    "comentario":"Coments",
+    "downloadPdf":"Send and Download"
     
   },
 
@@ -47,10 +49,10 @@
   "QuotteWizard": {},
   "Step1": {
     "title": "What type of website do you need?",
-    "Institucional": "Institutional website",
-    "E-commerce": "E-commerce or catalog",
-    "Landing": "Landing page",
-    "Complejo":"Complex website",
+    "Institucional": "Institutional WebSite",
+    "E-commerce": "E-commerce or Catalog",
+    "Landing": "Landing Page",
+    "Complejo":"Complex WebSite",
     "button": "Next"
   },
   "Step2":{

@@ -30,7 +30,9 @@
     "phone":"Telefono",
     "description":"Descrizione",
     "submit":"Inviare",
-    "back":"Indietro"
+    "back":"Indietro",
+     "comentario":"Commento",
+    "downloadPdf":"Inviare e Scaricare"
   },
   "FilpCardContainer": {
 
