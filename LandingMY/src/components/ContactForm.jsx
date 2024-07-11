@@ -2,20 +2,55 @@ import { forwardRef, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import jsPDF from 'jspdf';
+import Logo from '../assets/LogoBlanco.png'; // Ajusta la ruta a tu logo
 
 const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
   const { t } = useTranslation();
   const { option1, option2, option3, totalCost } = quoteData || {};
-  const description = `Tipo De Página: ${option1}, Hosting: ${option2}, Integraciones: ${option3?.join(' -- ')}, Costo total: $${totalCost}`;
+
+  const description = `
+    Tipo De Página: ${option1 || "Item no Seleccionado"}, 
+    Hosting: ${option2 || "Item no Seleccionado"}, 
+    Integraciones: ${option3?.length > 0 ? option3.join(' -- ') : "Item no Seleccionado"}, 
+    Costo total: $${totalCost || "Item no Seleccionado"}`;
+
   const formRef = useRef(null);
 
   const handleDownloadPDF = () => {
-    const doc = new jsPDF();
-    doc.text("Formulario de Contacto", 10, 10);
-    doc.text(`Tipo De Pagina: ${option1}`, 10, 20);
-    doc.text(`Hosting: ${option2}`, 10, 30);
-    doc.text(`Integraciones: ${option3?.join(', ')}`, 10, 40);
-    doc.text(`Costo total: $${totalCost}`, 10, 50);
+    const doc = new jsPDF({
+      orientation: 'portrait',
+      unit: 'mm',
+      format: 'a5'
+    });
+    const date = new Date().toLocaleDateString();
+
+    // Agregar el logo
+    const logo = new Image();
+    logo.src = Logo;
+    doc.addImage(logo, 'PNG', 10, 10, 20, 10); // Tamaño reducido del logo
+
+    // Agregar fecha
+    doc.setFontSize(10);
+    doc.setTextColor(128, 128, 128); // Color gris
+    doc.text(`Fecha: ${date}`, 110, 20);
+
+    // Título
+    doc.setFontSize(14);
+    doc.setTextColor(0, 0, 0); // Color negro
+    doc.text("Formulario de Contacto", 10, 35);
+
+    // Detalles del presupuesto
+    doc.setFontSize(10);
+    doc.text(`Tipo De Página: ${option1 || "Item no Seleccionado"}`, 10, 45);
+    doc.text(`Hosting: ${option2 || "Item no Seleccionado"}`, 10, 55);
+    doc.text(`Integraciones: ${option3?.length > 0 ? option3.join(', ') : "Item no Seleccionado"}`, 10, 65);
+    doc.text(`Costo total: $${totalCost || "Item no Seleccionado"}`, 10, 75);
+
+    // Pie de página
+    doc.setFontSize(8);
+    doc.text("*Cotización basada en tu selección, comunícate con nosotros para solicitar una Demo.", 10, 140);
+
+    // Guardar el PDF
     doc.save("cotizacion.pdf");
   };
 
@@ -151,6 +186,9 @@ ContactForm.propTypes = {
 ContactForm.displayName = 'ContactForm';
 
 export default ContactForm;
+
+
+
 
 
 
